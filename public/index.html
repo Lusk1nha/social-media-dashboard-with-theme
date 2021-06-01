@@ -4,84 +4,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+
+  <title>Frontend Mentor | Social Media Dashboard with theme switcher</title>
+
 </head>
-<body>
+<body class="dark">
+  <header>
+    <div class="title-container">
+      <h3 class="title">Social Media Dashboard</h3>
+      <p class="total-followers">Total followers: 23.004</p>
+    </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="theme-container">
+      <h4 class="theme-name">Dark mode</h4>
+      <span class="button button--theme"></span>
+    </div>
+  </header>
 
-  Dark Mode
+  <main>
+    <div class="main-medias">
+      <div class="card facebook">
+        <div class="media-container">
+          <img class="social-media-img" src="./assets/icon-facebook.svg" alt="Facebook Icon" />
+          <h6 class="social-media-user">@nathanf</h6>
+        </div>
 
+        <div class="followers-container">
+          <h1 class="followers-total">1987</h1>
   
+          <h4 class="followers-name">Followers</h4>
+        </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="followers-count up">
+          <img class="followers-icon" src="./assets/icon-up.svg" alt="up arrow icon"> 
+          <h5>12 Today</h5>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="card twitter">
+        <div class="media-container">
+          <img class="social-media-img" src="./assets/icon-twitter.svg" alt="twitter Icon" />
+          <h6 class="social-media-user">@nathanf</h6>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <div class="followers-container">
+          <h1 class="followers-total">1044</h1>
+          <h4 class="followers-name">Followers</h4>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="followers-count up">
+          <img class="followers-icon" src="./assets/icon-up.svg" alt="up arrow icon"> 
+          <h5>99 Today</h5>
+        </div>
+      </div>
 
+      <div class="card instagram">
+        <div class="media-container">
+          <img class="social-media-img" src="./assets/icon-instagram.svg" alt="Instagram Icon" />
+          <h6 class="social-media-user">@realnathanf</h6>
+        </div>
 
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+        <div class="followers-container">
+          <h1 class="followers-total">11k</h1>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <h4 class="followers-name">Followers</h4>
+        </div>
+
+        <div class="followers-count up">
+          <img class="followers-icon" src="./assets/icon-up.svg" alt="up arrow icon"> 
+          <h5>1099 Today</h5>
+        </div>
+      </div>
+
+      <div class="card youtube">
+        <div class="media-container">
+          <img class="social-media-img" src="./assets/icon-youtube.svg" alt="Youtube Icon" />
+          <h6 class="social-media-user">Nathan F.</h6>
+        </div>
+
+        <div class="followers-container">
+          <h1 class="followers-total">8239</h1>
+  
+          <h4 class="followers-name">Subscribers</h4>
+        </div>
+
+        <div class="followers-count down">
+          <img class="followers-icon" src="./assets/icon-down.svg" alt="down arrow icon"> 
+          <h5>144 Today</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview-today">
+      <h1 class="overview-title">Overview - Today</h1>
+
+      <div class="overview-cards">
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Page Views</h5>
+            <img class="social-media-img" src="./assets/icon-facebook.svg" alt="Facebook Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">87</h4>
+
+            <div class="media-percent up">
+              <img class="percent-img" src="./assets/icon-up.svg" alt="arrow up icon">
+              <h6 class="percent">3%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Likes</h5>
+            <img class="social-media-img" src="./assets/icon-facebook.svg" alt="Facebook Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">52</h4>
+
+            <div class="media-percent down">
+              <img class="percent-img" src="./assets/icon-down.svg" alt="arrow down icon">
+              <h6 class="percent">3%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Likes</h5>
+            <img class="social-media-img" src="./assets/icon-instagram.svg" alt="instagram Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">5462</h4>
+
+            <div class="media-percent up">
+              <img class="percent-img" src="./assets/icon-up.svg" alt="arrow up icon">
+              <h6 class="percent">2257%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Profile Views</h5>
+            <img class="social-media-img" src="./assets/icon-instagram.svg" alt="instagram Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">52k</h4>
+
+            <div class="media-percent up">
+              <img class="percent-img" src="./assets/icon-up.svg" alt="arrow up icon">
+              <h6 class="percent">1375%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Retweets</h5>
+            <img class="social-media-img" src="./assets/icon-twitter.svg" alt="twitter Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">117</h4>
+
+            <div class="media-percent up">
+              <img class="percent-img" src="./assets/icon-up.svg" alt="arrow up icon">
+              <h6 class="percent">303%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Likes</h5>
+            <img class="social-media-img" src="./assets/icon-twitter.svg" alt="twitter Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">507</h4>
+
+            <div class="media-percent up">
+              <img class="percent-img" src="./assets/icon-up.svg" alt="arrow up icon">
+              <h6 class="percent">553%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Likes</h5>
+            <img class="social-media-img" src="./assets/icon-youtube.svg" alt="youtube Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">107</h4>
+
+            <div class="media-percent down">
+              <img class="percent-img" src="./assets/icon-down.svg" alt="arrow down icon">
+              <h6 class="percent">19%</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media-container">
+            <h5 class="card-title">Total Views</h5>
+            <img class="social-media-img" src="./assets/icon-youtube.svg" alt="youtube Icon">
+          </div>
+
+          <div class="media-infos">
+            <h4 class="media-value">1407</h4>
+
+            <div class="media-percent down">
+              <img class="percent-img" src="./assets/icon-down.svg" alt="arrow down icon">
+              <h6 class="percent">12%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="./theme.js"></script>
 </body>
 </html>

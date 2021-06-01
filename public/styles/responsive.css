@@ -1,0 +1,101 @@
+@media (min-width: 700px) {
+  body {
+    padding: 2rem 5%;
+  }
+  body header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body header .title-container {
+    border: 0 !important;
+  }
+  body header .theme-container {
+    max-width: 125px;
+  }
+  body main {
+    max-width: unset;
+  }
+  body main .main-medias {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  body main .main-medias .card {
+    min-height: 200px;
+    margin: 0;
+    margin-right: 1rem;
+  }
+  body main .overview-today .overview-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 2rem 10%;
+  }
+  body header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body header .title-container {
+    border: 0 !important;
+  }
+  body header .theme-container {
+    max-width: 125px;
+  }
+  body main {
+    max-width: unset;
+  }
+  body main .main-medias {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  body main .main-medias .card {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  body main .overview-today .overview-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 0.5rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
