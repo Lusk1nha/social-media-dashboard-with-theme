@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   body {
     padding: 2rem 5%;
     header {
@@ -14,15 +14,15 @@
     }
 
     main {
-      max-width: unset;
       .main-medias {
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+        gap: 1rem;
         margin-bottom: 2rem;
 
         .card {
-          min-height: 200px;
+          min-height: 215px;
           margin: 0;
           margin-right: 1rem;
         }
@@ -57,26 +57,17 @@
     }
 
     main {
-      max-width: unset;
       .main-medias {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        margin-bottom: 2rem;
-
-        .card {
-          margin: 0;
-          margin-right: 1rem;
-        }
+        gap: unset;
       }
 
       .overview-today {
         .overview-cards {
-          display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
-          row-gap: 0.5rem;
-          column-gap: 1rem;
-
         }
       }
     }
